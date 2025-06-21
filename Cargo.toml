@@ -1,3 +1,5 @@
 [workspace]
 resolver = "3"
 members = ["procmacro-lib", "server", "iced-client", "shared-lib", "client-lib", "rust-api-integrator"]
+license = "GPL-3.0-or-later"
+license-file = "LICENSE"
