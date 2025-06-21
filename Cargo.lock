@@ -878,55 +878,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b94f61472cee1439c0b966b47e3aca9ae07e45d070759512cd390ea2bebc6675"
 
 [[package]]
-name = "client"
-version = "0.1.0"
-dependencies = [
- "async-stream",
- "chrono",
- "client-lib",
- "futures",
- "iced",
- "log",
- "once_cell",
- "procmacro-lib",
- "regex",
- "reqwest",
- "rust-api-integrator",
- "serde",
- "serde_json",
- "shared-lib",
- "thiserror 2.0.12",
- "tokio",
- "tokio-stream",
- "tokio-tungstenite 0.26.2",
- "tokio-util",
- "toml",
- "tracing",
- "tracing-subscriber",
- "url 2.5.4",
- "url_serde",
- "uuid",
-]
-
-[[package]]
-name = "client-lib"
-version = "0.1.0"
-dependencies = [
- "async-stream",
- "futures",
- "once_cell",
- "reqwest",
- "serde",
- "serde_json",
- "shared-lib",
- "tokio",
- "tokio-tungstenite 0.27.0",
- "toml",
- "tracing",
- "url 2.5.4",
-]
-
-[[package]]
 name = "clipboard-win"
 version = "5.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3107,6 +3058,113 @@ dependencies = [
 ]
 
 [[package]]
+name = "nultr-client-lib"
+version = "0.1.0"
+dependencies = [
+ "async-stream",
+ "futures",
+ "nultr-shared-lib",
+ "once_cell",
+ "reqwest",
+ "serde",
+ "serde_json",
+ "tokio",
+ "tokio-tungstenite 0.27.0",
+ "toml",
+ "tracing",
+ "url 2.5.4",
+]
+
+[[package]]
+name = "nultr-iced-client"
+version = "0.1.0"
+dependencies = [
+ "async-stream",
+ "chrono",
+ "futures",
+ "iced",
+ "log",
+ "nultr-client-lib",
+ "nultr-procmacro-lib",
+ "nultr-shared-lib",
+ "once_cell",
+ "regex",
+ "reqwest",
+ "rust-api-integrator",
+ "serde",
+ "serde_json",
+ "thiserror 2.0.12",
+ "tokio",
+ "tokio-stream",
+ "tokio-tungstenite 0.26.2",
+ "tokio-util",
+ "toml",
+ "tracing",
+ "tracing-subscriber",
+ "url 2.5.4",
+ "url_serde",
+ "uuid",
+]
+
+[[package]]
+name = "nultr-procmacro-lib"
+version = "0.1.0"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 2.0.103",
+]
+
+[[package]]
+name = "nultr-server"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "argon2",
+ "axum",
+ "axum-extra",
+ "chrono",
+ "clap",
+ "cookie",
+ "dotenv",
+ "futures",
+ "headers",
+ "jsonwebtoken",
+ "lazy_static",
+ "nultr-shared-lib",
+ "once_cell",
+ "rand 0.9.1",
+ "rand_core 0.9.3",
+ "rust-api-integrator",
+ "sea-orm",
+ "serde",
+ "serde_json",
+ "tokio",
+ "tower-http",
+ "tracing",
+ "tracing-subscriber",
+ "url 2.5.4",
+ "uuid",
+]
+
+[[package]]
+name = "nultr-shared-lib"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "axum",
+ "chrono",
+ "reqwest",
+ "rust-api-integrator",
+ "serde",
+ "serde_json",
+ "tokio",
+ "tracing",
+ "url 2.5.4",
+ "uuid",
+]
+
+[[package]]
 name = "num-bigint"
 version = "0.4.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3929,15 +3987,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "procmacro-lib"
-version = "0.1.0"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn 2.0.103",
-]
-
-[[package]]
 name = "profiling"
 version = "1.0.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4718,38 +4767,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "server"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "argon2",
- "axum",
- "axum-extra",
- "chrono",
- "clap",
- "cookie",
- "dotenv",
- "futures",
- "headers",
- "jsonwebtoken",
- "lazy_static",
- "once_cell",
- "rand 0.9.1",
- "rand_core 0.9.3",
- "rust-api-integrator",
- "sea-orm",
- "serde",
- "serde_json",
- "shared-lib",
- "tokio",
- "tower-http",
- "tracing",
- "tracing-subscriber",
- "url 2.5.4",
- "uuid",
-]
-
-[[package]]
 name = "sha1"
 version = "0.10.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4778,23 +4795,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f40ca3c46823713e0d4209592e8d6e826aa57e928f09752619fc696c499637f6"
 dependencies = [
  "lazy_static",
-]
-
-[[package]]
-name = "shared-lib"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "axum",
- "chrono",
- "reqwest",
- "rust-api-integrator",
- "serde",
- "serde_json",
- "tokio",
- "tracing",
- "url 2.5.4",
- "uuid",
 ]
 
 [[package]]

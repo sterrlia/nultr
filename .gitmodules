@@ -1,6 +1,6 @@
-[submodule "client"]
-	path = client
-	url = ./client
+[submodule "iced-client"]
+	path = iced-client
+	url = ./iced-client
 [submodule "client-lib"]
 	path = client-lib
 	url = ./client-lib
