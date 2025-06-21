@@ -1,0 +1,3 @@
+[workspace]
+resolver = "3"
+members = ["procmacro-lib", "server", "client", "shared-lib", "client-lib", "rust-api-integrator"]

@@ -1,0 +1,18 @@
+[submodule "client"]
+	path = client
+	url = ./client
+[submodule "client-lib"]
+	path = client-lib
+	url = ./client-lib
+[submodule "procmacro-lib"]
+	path = procmacro-lib
+	url = ./procmacro-lib/
+[submodule "rust-api-integrator"]
+	path = rust-api-integrator
+	url = ./rust-api-integrator/
+[submodule "server"]
+	path = server
+	url = ./server
+[submodule "shared-lib"]
+	path = shared-lib
+	url = ./shared-lib/
