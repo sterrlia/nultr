@@ -1,5 +1,16 @@
 [workspace]
 resolver = "3"
-members = ["procmacro-lib", "server", "iced-client", "shared-lib", "client-lib", "rust-api-integrator"]
+members = ["procmacro-lib", "server", "shared-lib", "client-lib", "rust-api-kit", "dioxus-client", "test-project"]
+authors = ["sterrlia <dev@sterrlia.com>"]
 license = "GPL-3.0-or-later"
 license-file = "LICENSE"
+
+[profile.wasm-dev]
+inherits = "dev"
+opt-level = 1
+
+[profile.server-dev]
+inherits = "dev"
+
+[profile.android-dev]
+inherits = "dev"
