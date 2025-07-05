@@ -1,18 +1,18 @@
 [submodule "iced-client"]
 	path = iced-client
-	url = ./iced-client
+	url = https://github.com/sterrlia/iced-client
 [submodule "client-lib"]
 	path = client-lib
-	url = ./client-lib
+	url = https://github.com/sterrlia/client-lib
 [submodule "procmacro-lib"]
 	path = procmacro-lib
-	url = ./procmacro-lib/
+	url = https://github.com/sterrlia/procmacro-lib
 [submodule "server"]
 	path = server
-	url = ./server
+	url = https://github.com/sterrlia/server
 [submodule "shared-lib"]
 	path = shared-lib
-	url = ./shared-lib/
+	url = https://github.com/sterrlia/shared-lib
 [submodule "dioxus-client"]
 	path = dioxus-client
-	url = ./dioxus-client
+	url = https://github.com/sterrlia/dioxus-client
