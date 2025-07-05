@@ -7,9 +7,6 @@
 [submodule "procmacro-lib"]
 	path = procmacro-lib
 	url = ./procmacro-lib/
-[submodule "rust-api-kit"]
-	path = rust-api-kit
-	url = ./rust-api-kit/
 [submodule "server"]
 	path = server
 	url = ./server
