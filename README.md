@@ -49,6 +49,8 @@
 Run:
 
 ``` bash
+cp server/.env.example server/.env
+openssl rand -hex 64 # add this to after JWT_SECRET_KEY=
 cargo install sea-orm-cli@1.1.0
 sea-orm-cli migrate up # creates database and runs migrations
 cargo run -- add-user -- first # Creates user and outputs password
