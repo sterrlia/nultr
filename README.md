@@ -4,11 +4,11 @@
 
 ### 🔐 Login screen
 
-![Login](iced-client/images/login.png)
+![Login](screenshots/login.png)
 
 ### 💬 Chat screen
 
-![Chat](iced-client/images/chat.png)
+![Chat](screenshots/chat.png)
 
 ## Status
 - Messenger project built for educational purposes
@@ -25,22 +25,22 @@
 - Client <-> server
 - Everything written in Rust
 
-### shared-lib
+### [`shared-lib`](https://github.com/sterrlia/nultr-shared-lib)
 - For request-response route definitions using [`rust-api-kit`](https://crates.io/crates/rust-api-kit)
 - Used by server to generate routes and for request-response definitions
 - Used by client to use http client and for request-response definitions
 
-### client-lib
+### [`client-lib`](https://github.com/sterrlia/nultr-client-lib)
 - Library for client implementations
 
-### iced-client
-- The current GUI client using [`iced`](https://github.com/iced-rs/iced)
-- (Deprecated: Dioxus client no longer maintained)
+### [`iced-client`](https://github.com/sterrlia/nultr-iced-client)
+- The current GUI client uses [`iced`](https://github.com/iced-rs/iced)
+- Dioxus client is not yet implemented
 
-### procmacro-lib
-- Shared library for macros
+### [`procmacro-lib`](https://github.com/sterrlia/nultr-procmacro-lib)
+- Shared library for proc macros
 
-### server
+### [`server`](https://github.com/sterrlia/nultr-server)
 - Backend server using [`axum`](https://crates.io/crates/axum)
 
 ## Getting started
