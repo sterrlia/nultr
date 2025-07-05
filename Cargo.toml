@@ -1,9 +1,6 @@
 [workspace]
 resolver = "3"
 members = ["procmacro-lib", "server", "shared-lib", "client-lib", "iced-client", "server/migration"]
-authors = ["sterrlia <dev@sterrlia.com>"]
-license = "GPL-3.0-or-later"
-license-file = "LICENSE"
 
 [profile.wasm-dev]
 inherits = "dev"
